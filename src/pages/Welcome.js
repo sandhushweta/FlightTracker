@@ -18,20 +18,22 @@ const Welcome = () => {
           style={[containerStyle.container, { width: "100", hieght: "100"}]}>
           
           <Text
+          
             style={{
-              fontSize: 50,
-             
+              fontSize: 40,
+              textAlign:"center",
               fontWeight: "bold",
               color: "black",
               fontFamily: "Inter-Black",
-              backgroundColor: "white",
+              backgroundColor: "#78f4ff",
               borderRadius: 10,
+              borderWidth:2,
               paddingHorizontal:50,
-              margin:10,
+              margin:5,
             }}>
             FLIGHT
           </Text>
-          <View style = {{borderwidth: 5, bordercolor:"grey",width:20,display:"flex",justifyContent:"center",alignItems:"center", borderRadius:12 }}>
+          <View style = {{borderwidth:5, bordercolor:"grey",width:200,display:"flex",justifyContent:"center",alignItems:"center", borderRadius:12 }}>
           <Text
             style={{
               fontSize: 35,
@@ -40,9 +42,9 @@ const Welcome = () => {
               fontWeight: "bold",
               color: "5cfa71",
               fontFamily: "Inter-Black",
-              backgroundColor: "white",
+              backgroundColor: "#facda0",
               borderRadius: 10,
-              borderWidth: 5,
+              borderWidth: 2,
 margin:4,
 width:180,
             padding:4,
@@ -51,8 +53,8 @@ width:180,
           </Text>
 
           </View>
-          <View style={{ marginTop:400 }}>
-            <CustomButton title={"GET STARTED"}></CustomButton>
+          <View style={{ marginTop:450 }}>
+            <CustomButton title={"START TRAVEL"}></CustomButton>
           </View>
         </ImageBackground>
       ) : (
