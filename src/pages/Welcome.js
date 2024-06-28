@@ -8,7 +8,7 @@ import { containerStyle } from "../styles";
 const WelcomeImage = require("../../assets/img/welcome.jpg");
 
 const Welcome = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <>
       {isLoading === false ? (
@@ -21,7 +21,6 @@ const Welcome = () => {
               fontSize: 100,
               fontWeight: "bold",
               color: "black",
-              fontFamily: "Inter-Black",
               backgroundColor: "yellow",
               paddingHorizontal: 10,
             }}>
@@ -32,7 +31,6 @@ const Welcome = () => {
               fontSize: 45,
               fontWeight: "bold",
               color: "black",
-              fontFamily: "Inter-Black",
               borderColor: "yellow",
               borderWidth: 2,
               padding: 12,
