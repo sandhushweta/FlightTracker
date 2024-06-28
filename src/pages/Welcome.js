@@ -31,7 +31,7 @@ const Welcome = () => {
             }}>
             FLIGHT
           </Text>
-          <View style = {{borderwidth: 5, bordercolor:"grey",width:260,display:"flex",justifyContent:"center",alignItems:"center", borderRadius:12 }}>
+          <View style = {{borderwidth: 5, bordercolor:"grey",width:20,display:"flex",justifyContent:"center",alignItems:"center", borderRadius:12 }}>
           <Text
             style={{
               fontSize: 35,
@@ -44,7 +44,7 @@ const Welcome = () => {
               borderRadius: 10,
               borderWidth: 5,
 margin:4,
-width:200,
+width:180,
             padding:4,
             }}>
             TRACKER
