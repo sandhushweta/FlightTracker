@@ -11,37 +11,48 @@ const Welcome = () => {
   const [isLoading, setIsLoading] = useState(true);
   return (
     <>
-      {isLoading === false ? (
+      {isLoading === true ? (
         <ImageBackground
           imageStyle={{ opacity: 0.9 }}
           source={WelcomeImage}
-          style={[containerStyle.container, {}]}>
+          style={[containerStyle.container, { width: "100", hieght: "100"}]}>
+          
           <Text
             style={{
-              fontSize: 100,
+              fontSize: 50,
+             
               fontWeight: "bold",
               color: "black",
               fontFamily: "Inter-Black",
-              backgroundColor: "yellow",
-              paddingHorizontal: 10,
+              backgroundColor: "white",
+              borderRadius: 10,
+              paddingHorizontal:50,
+              margin:10,
             }}>
             FLIGHT
           </Text>
+          <View style = {{borderwidth: 5, bordercolor:"grey",width:260,display:"flex",justifyContent:"center",alignItems:"center", borderRadius:12 }}>
           <Text
             style={{
-              fontSize: 45,
+              fontSize: 35,
+              textAlign:"center",
+              
               fontWeight: "bold",
-              color: "black",
+              color: "5cfa71",
               fontFamily: "Inter-Black",
-              borderColor: "yellow",
-              borderWidth: 2,
-              padding: 12,
+              backgroundColor: "white",
+              borderRadius: 10,
+              borderWidth: 5,
+margin:4,
+width:200,
+            padding:4,
             }}>
-            TRACKER APP
+            TRACKER
           </Text>
 
-          <View style={{ marginTop: 200 }}>
-            <CustomButton title={"Get Started"}></CustomButton>
+          </View>
+          <View style={{ marginTop:400 }}>
+            <CustomButton title={"GET STARTED"}></CustomButton>
           </View>
         </ImageBackground>
       ) : (

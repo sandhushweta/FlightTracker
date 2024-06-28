@@ -7,9 +7,9 @@ const CustomButton = ({ title }) => {
     <View>
       <TouchableOpacity
         style={{
-          width: 300,
+          width: 190,
           height: 50,
-          backgroundColor: "yellow",
+          backgroundColor: "#3ae5e8",
           justifyContent: "center",
           borderRadius: 20,
         }}>
