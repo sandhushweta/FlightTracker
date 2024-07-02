@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       
-    {/*<Navigation />*/}
+    {/* <Navigation /> */}
       <BottomTabNavigation/>
 
     </>

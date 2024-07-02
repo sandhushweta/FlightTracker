@@ -14,7 +14,7 @@ const BottomTabNavigation = () => {
     <NavigationContainer>
       <Tab.Navigator
         activeColor="black"
-        inactiveColor="#3e2465"
+        inactiveColor="#386c80"
     
         barStyle={{
           backgroundColor: tabBackground,
@@ -25,7 +25,7 @@ const BottomTabNavigation = () => {
           component={Home}
           listeners={{
             tabPress() {
-              setTabBackground("red");
+              setTabBackground("#dfbce3");
             },
           }}
           options={{
@@ -52,15 +52,17 @@ const BottomTabNavigation = () => {
                 color={color}
                 size={26}
               />
+              
             ),
           }}
         />
+        
         <Tab.Screen
           name="Profile"
           component={Home}
           listeners={{
             tabPress() {
-              setTabBackground("green");
+              setTabBackground("#a695fc");
             },
           }}
           options={{
@@ -69,6 +71,23 @@ const BottomTabNavigation = () => {
               <MaterialCommunityIcons name="account" color={color} size={26} />
             ),
           }}
+          
+        />
+         <Tab.Screen
+          name="Map"
+          component={Home}
+          listeners={{
+            tabPress() {
+              setTabBackground("#e37177");
+            },
+          }}
+          options={{
+            tabBarLabel: "google-maps",
+            tabBarIcon: ({ color }) => (
+              <MaterialCommunityIcons name="google-maps" color={color} size={26} />
+            ),
+          }}
+          
         />
       </Tab.Navigator>
     </NavigationContainer>

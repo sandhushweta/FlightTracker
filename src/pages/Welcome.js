@@ -13,23 +13,26 @@ const Welcome = () => {
     <>
       {isLoading === true ? (
         <ImageBackground
-          imageStyle={{ opacity: 0.9 }}
+          imageStyle={{ opacity: 5.5 }}
           source={WelcomeImage}
           style={[containerStyle.container, { width: "100", hieght: "100"}]}>
           
           <Text
           
             style={{
+              fontStyle:"italic",
               fontSize: 40,
+          marginRight: 70,
               textAlign:"center",
-              fontWeight: "bold",
+              fontWeight: "900",
               color: "black",
               fontFamily: "Inter-Black",
               backgroundColor: "#78f4ff",
               borderRadius: 10,
               borderWidth:2,
-              paddingHorizontal:50,
-              margin:5,
+              paddingHorizontal:30,
+              
+            
             }}>
             FLIGHT
           </Text>
@@ -38,8 +41,9 @@ const Welcome = () => {
             style={{
               fontSize: 35,
               textAlign:"center",
+              marginLeft:80,
               
-              fontWeight: "bold",
+              fontWeight: "900",
               color: "5cfa71",
               fontFamily: "Inter-Black",
               backgroundColor: "#facda0",
